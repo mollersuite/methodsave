@@ -1,0 +1,5 @@
+{
+	"imports": {
+		"troll": "./troll/src/main.js"
+	}
+}

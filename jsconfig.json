@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"checkJs": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "nodenext",
+		"resolveJsonModule": true,
+		"noLib": true,
+		"typeRoots": [
+			"./node_modules/@gi-types"
+		]
+	}
+}
