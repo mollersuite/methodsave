@@ -3,9 +3,9 @@ declare module "glib"
 
 /**
  * > "[slur]-[expletive] [slur], get trolled"
- * 
+ *
  * ―[Kankan, chorus of "Get Trolled"](https://youtu.be/aIzMD_I2Zj4?t=22)
- * 
+ *
  * ---
  * `troll` is:
  * 1. An implementation of common JavaScript APIs for gjs
@@ -19,3 +19,15 @@ declare module "troll" {
 	function build(url: string, params?: unknown): any // i forgor :skull:
 }
 declare module "*.blp"
+declare module "*.svg"
+
+/**
+ * implementation of common JavaScript globals for gjs
+ */
+declare module "troll/globals.js" {
+	declare global {
+		var atob: (str: string) => string
+		var btoa: (str: string) => string
+		// TODO: Fetch, WebSocket, are in troll but I haven't typed them yet
+	}
+}
