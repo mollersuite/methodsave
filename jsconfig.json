@@ -1,13 +1,16 @@
 {
 	"compilerOptions": {
+		// GJS uses ESR SpiderMonkey
+		// Firefox 115 ESR released on July 4. The latest GNOME upgrade, GNOME 44, released March 22.
+		// So GNOME must use Firefox 102 ESR which is from 2022
+		// https://discourse.gnome.org/t/gnome-43-to-depend-on-spidermonkey-102/10658
+		"target": "ES2022",
+		"module": "ESNext", // Import attributes are only available when targeting ESNext
+		"lib": ["ES2022"],
+
 		"checkJs": true,
-		"target": "ESNext",
-		"module": "ESNext",
 		"moduleResolution": "nodenext",
 		"resolveJsonModule": true,
-		"noLib": true,
-		"typeRoots": [
-			"./node_modules/@gi-types"
-		]
+		"typeRoots": ["./node_modules/@gi-types"]
 	}
 }
