@@ -1,10 +1,35 @@
 using Gtk 4.0;
+using Adw 1;
 
-ApplicationWindow window {
-  title: "Methodsave";
+Adw.ApplicationWindow window {
   default-width: 800;
   default-height: 600;
-  Label {
-    label: "THIS IS GJS BITCH! we clown in this muthafucka betta take yo sensitive ass back to RELM4";
+  title: "Methodsave";
+  Box {
+    orientation: vertical;
+    Adw.HeaderBar {
+      styles ["flat"]
+      
+      [title]
+      Adw.Clamp {
+        tightening-threshold: 400;
+        hexpand: true;
+        Gtk.SearchEntry search {
+          placeholder-text: "Search for memories";
+        }
+      }
+
+      [end]
+      Gtk.Button {
+        icon-name: "about-symbolic";
+        clicked => $about();
+      }
+    }
+    Adw.StatusPage {
+      icon-name: "uk.cetera.Methodsave";
+      title: "Coming soon";
+      description: "All together now.";
+      vexpand: true;
+    }
   }
 }

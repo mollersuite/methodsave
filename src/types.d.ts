@@ -1,6 +1,4 @@
-declare module "gtk"
-declare module "glib"
-
+declare module "gi://Adw*"
 /**
  * > "[slur]-[expletive] [slur], get trolled"
  *
@@ -19,6 +17,7 @@ declare module "troll" {
 	function build(url: string, params?: unknown): any // i forgor :skull:
 }
 declare module "*.blp"
+declare module "*.css"
 declare module "*.svg"
 
 /**
