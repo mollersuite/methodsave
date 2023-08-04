@@ -20,7 +20,7 @@
         default = pkgs.stdenvNoCC.mkDerivation {
           pname = "methodsave";
           version = "0.1.0";
-          src = ./.;
+          src = self;
           nativeBuildInputs = [ pkgs.gjs pkgs.gobject-introspection pkgs.wrapGAppsHook pkgs.blueprint-compiler ];
           buildInputs = [
             pkgs.gjs
