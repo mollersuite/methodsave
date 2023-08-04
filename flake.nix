@@ -1,4 +1,5 @@
 {
+  nixConfig.commit-lockfile-summary = "chore: :arrow_up: Update flake.lock";
   inputs = {
     nixpkgs.url = "nixpkgs/nixpkgs-unstable";
     troll = {
