@@ -11,6 +11,6 @@
 		"checkJs": true,
 		"moduleResolution": "nodenext",
 		"resolveJsonModule": true,
-		"typeRoots": ["./node_modules/@gi-types"]
+		"typeRoots": ["./node_modules/@girs"]
 	}
 }

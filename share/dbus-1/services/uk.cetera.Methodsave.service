@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=uk.cetera.Methodsave
+Exec=@out@/bin/uk.cetera.Methodsave --gapplication-service

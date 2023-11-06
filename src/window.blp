@@ -1,7 +1,7 @@
 using Gtk 4.0;
 using Adw 1;
 
-Adw.ApplicationWindow window {
+Adw.Window window {
   default-width: 800;
   default-height: 600;
   title: "Methodsave";
@@ -9,7 +9,6 @@ Adw.ApplicationWindow window {
     orientation: vertical;
     Adw.HeaderBar {
       styles ["flat"]
-      
       [title]
       Adw.Clamp {
         tightening-threshold: 400;
@@ -27,9 +26,38 @@ Adw.ApplicationWindow window {
     }
     Adw.StatusPage {
       icon-name: "uk.cetera.Methodsave";
-      title: "Coming soon";
-      description: "All together now.";
+      title: "Method is coming.";
       vexpand: true;
     }
   }
+  // Adw.NavigationSplitView {
+  //   [sidebar]
+  //   Adw.NavigationPage {
+  //     title: "Sidebar";
+  //   Box {
+  //     orientation: vertical;
+  //               Gtk.SearchEntry search {
+  //         placeholder-text: "Search for memories";
+  //       }
+        
+    
+  //   }
+  //   }
+  //   [content]
+  //   Adw.NavigationPage {
+  //   title: "Content";
+
+  //   Box {
+  //     orientation: vertical;
+  //     // Adw.HeaderBar {}
+    
+  //     Adw.StatusPage {
+  //     icon-name: "uk.cetera.Methodsave";
+  //     title: "Coming soon";
+  //     description: "All together now.";
+  //     vexpand: true;
+  //   }
+  //   }
+  //   }
+  // }
 }

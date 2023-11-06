@@ -1,5 +1,6 @@
 {
 	"trailingComma": "es5",
 	"useTabs": true,
-	"semi": false
+	"semi": false,
+	"arrowParens": "avoid"
 }

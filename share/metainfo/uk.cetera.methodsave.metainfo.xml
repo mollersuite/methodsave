@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>uk.cetera.methodsave</id>
+  
+  <name>Methodsave</name>
+  <summary>Archive and ask questions about everything you Save</summary>
+  
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  
+	<categories>
+		<category>ArtificialIntelligence</category>
+		<category>GNOME</category>
+	</categories>
+
+	<url type="homepage">https://cetera.uk/methodsave</url>
+	<url type="bugtracker">https://github.com/mollersuite/methodsave</url>
+	<url type="contact">https://cetera.uk/discord</url>
+	<url type="vcs-browser">https://github.com/mollersuite/methodsave</url>
+
+	    <provides>
+        <mediatype>application/ld+json</mediatype>
+		<binary>uk.cetera.Methodsave</binary>
+		<dbus type="user">uk.cetera.Methodsave</dbus>
+     </provides>
+
+
+	
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+  <recommends>
+  <internet>always</internet>
+</recommends>
+<developer_name>Etcetera Development</developer_name>
+  <description>
+    <p>
+      Methodsave is a new approach to bookmarks. Methodsave understands webpages using structured data, so an article is displayed differently from a tweet differently from a video.
+	</p>
+	</description>
+
+	<launchable type="desktop-id">methodsave.desktop</launchable>
+</component>
